@@ -9,7 +9,29 @@ import SwiftUI
 
 struct TaskListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack {
+            Color("Background")
+                .ignoresSafeArea()
+            
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Image("ic-menu")
+            }
+            
+            ToolbarItem(placement: .principal) {
+                Text("Today")
+                    .font(.navTitle)
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Image("ic-more")
+            }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        
     }
 }
 
