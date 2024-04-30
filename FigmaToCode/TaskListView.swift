@@ -8,13 +8,41 @@
 import SwiftUI
 
 struct TaskListView: View {
+    
+    var tasks = Task.getMockTasks()
+    
     var body: some View {
         
         ZStack {
             Color("Background")
                 .ignoresSafeArea()
             
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            ScrollView {
+                VStack {
+                    HStack {
+                        Text("Today")
+                        Spacer()
+                        Text("\(tasks.count)")
+                        Image("ic-downarrow")
+                    }
+                    .font(Font.taskText)
+                    
+                    ForEach(tasks) { task in
+                        HStack {
+                            Image("ic-checkbox")
+                            Text(task.title)
+                                .font(Font.taskText)
+                            Spacer()
+                            VStack(alignment: .trailing, spacing: 0) {
+                                Text("18.00")
+                                    .foregroundColor(Color("Alarm"))
+                                    .font(Font.taskAlamText)
+                                Image("ic-alarm")
+                            }
+                        }
+                    }
+                }
+            }
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {

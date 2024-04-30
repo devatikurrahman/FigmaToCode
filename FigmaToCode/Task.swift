@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Task {
+struct Task: Identifiable {
+    var id = UUID()
     var title: String
     static func getMockTasks() -> [Task] {
         var tasks = [Task]()
