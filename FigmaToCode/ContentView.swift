@@ -24,17 +24,31 @@ struct ContentView: View {
         
         TabView {
             
-            TaskListView()
-                .tabItem { Image("ic-tasklist") }
+            NavigationView {
+                TaskListView()
+            }
+            .tabItem {
+                Image("ic-tasklist")
+                    .renderingMode(.template)
+            }
             
             CalendarView()
-                .tabItem { Image("ic-calendar") }
+                .tabItem {
+                    Image("ic-calendar")
+                        .renderingMode(.template)
+                }
             
             ReminderView()
-                .tabItem { Image("ic-reminder") }
+                .tabItem {
+                    Image("ic-reminder")
+                        .renderingMode(.template)
+                }
             
             SettingsView()
-                .tabItem { Image("ic-settings") }
+                .tabItem {
+                    Image("ic-settings")
+                        .renderingMode(.template)
+                }
         }
     }
 }
