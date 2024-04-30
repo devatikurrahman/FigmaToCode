@@ -8,14 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    /*
+    // Find out actual font name from a custom font
+    init() {
+        for fontFamily in UIFont.familyNames {
+            //print("Font family name: \(fontFamily)")
+            for font in UIFont.fontNames(forFamilyName:fontFamily) {
+                print("Actual font name: \(font)")
+            }
         }
-        .padding()
+    }
+    */
+    
+    var body: some View {
+        
+        TabView {
+            
+            TaskListView()
+                .tabItem { Image("ic-tasklist") }
+            
+            CalendarView()
+                .tabItem { Image("ic-calendar") }
+            
+            ReminderView()
+                .tabItem { Image("ic-reminder") }
+            
+            SettingsView()
+                .tabItem { Image("ic-settings") }
+        }
     }
 }
 

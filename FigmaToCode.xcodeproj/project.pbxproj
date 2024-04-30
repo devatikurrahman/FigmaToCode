@@ -17,6 +17,10 @@
 		6013120A2BE107D7000F1A31 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601312082BE107D6000F1A31 /* Inter-Bold.ttf */; };
 		6013120B2BE107D7000F1A31 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 601312092BE107D7000F1A31 /* Inter-SemiBold.ttf */; };
 		6013120E2BE10DD0000F1A31 /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6013120D2BE10DD0000F1A31 /* FontStyles.swift */; };
+		601312102BE111DB000F1A31 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6013120F2BE111DB000F1A31 /* TaskListView.swift */; };
+		601312122BE111F3000F1A31 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601312112BE111F3000F1A31 /* CalendarView.swift */; };
+		601312142BE11200000F1A31 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601312132BE11200000F1A31 /* ReminderView.swift */; };
+		601312162BE11209000F1A31 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601312152BE11209000F1A31 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		601312092BE107D7000F1A31 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		6013120C2BE107EB000F1A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6013120D2BE10DD0000F1A31 /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		6013120F2BE111DB000F1A31 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		601312112BE111F3000F1A31 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		601312132BE11200000F1A31 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
+		601312152BE11209000F1A31 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				601312072BE107BE000F1A31 /* Fonts */,
 				601311DD2BE0D66C000F1A31 /* FigmaToCodeApp.swift */,
 				601311DF2BE0D66C000F1A31 /* ContentView.swift */,
+				6013120F2BE111DB000F1A31 /* TaskListView.swift */,
+				601312112BE111F3000F1A31 /* CalendarView.swift */,
+				601312132BE11200000F1A31 /* ReminderView.swift */,
+				601312152BE11209000F1A31 /* SettingsView.swift */,
 				601311E12BE0D66E000F1A31 /* Assets.xcassets */,
 				601311E32BE0D66E000F1A31 /* Preview Content */,
 				6013120D2BE10DD0000F1A31 /* FontStyles.swift */,
@@ -278,9 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601312162BE11209000F1A31 /* SettingsView.swift in Sources */,
 				601311E02BE0D66C000F1A31 /* ContentView.swift in Sources */,
 				601311DE2BE0D66C000F1A31 /* FigmaToCodeApp.swift in Sources */,
+				601312142BE11200000F1A31 /* ReminderView.swift in Sources */,
 				6013120E2BE10DD0000F1A31 /* FontStyles.swift in Sources */,
+				601312122BE111F3000F1A31 /* CalendarView.swift in Sources */,
+				601312102BE111DB000F1A31 /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
