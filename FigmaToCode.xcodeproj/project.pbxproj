@@ -21,6 +21,7 @@
 		601312122BE111F3000F1A31 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601312112BE111F3000F1A31 /* CalendarView.swift */; };
 		601312142BE11200000F1A31 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601312132BE11200000F1A31 /* ReminderView.swift */; };
 		601312162BE11209000F1A31 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601312152BE11209000F1A31 /* SettingsView.swift */; };
+		601312182BE182FF000F1A31 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601312172BE182FE000F1A31 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		601312112BE111F3000F1A31 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		601312132BE11200000F1A31 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 		601312152BE11209000F1A31 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		601312172BE182FE000F1A31 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				601311E12BE0D66E000F1A31 /* Assets.xcassets */,
 				601311E32BE0D66E000F1A31 /* Preview Content */,
 				6013120D2BE10DD0000F1A31 /* FontStyles.swift */,
+				601312172BE182FE000F1A31 /* Task.swift */,
 			);
 			path = FigmaToCode;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601312182BE182FF000F1A31 /* Task.swift in Sources */,
 				601312162BE11209000F1A31 /* SettingsView.swift in Sources */,
 				601311E02BE0D66C000F1A31 /* ContentView.swift in Sources */,
 				601311DE2BE0D66C000F1A31 /* FigmaToCodeApp.swift in Sources */,
